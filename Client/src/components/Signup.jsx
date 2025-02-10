@@ -42,7 +42,7 @@ const Signup = () => {
   const handleSignUp = async () => {
     try {
       let response = await axios.post(
-        "https://user-authentication-api.vercel.app//auth/signup",
+        "https://user-authentication-api.vercel.app/auth/signup",
         loginInfo
       );
       console.log(response);
