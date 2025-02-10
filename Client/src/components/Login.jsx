@@ -36,7 +36,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       let response = await axios.post(
-        "https://user-authentication-api.vercel.app//auth/login",
+        "https://user-authentication-api.vercel.app/auth/login",
         loginInfo
       );
       const { success, message, jwtToken, name } = response.data;
