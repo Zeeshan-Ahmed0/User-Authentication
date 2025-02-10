@@ -17,7 +17,7 @@ const Home = () => {
         },
       };
       let response = await axios.get(
-        "http://localhost:8000/products/get",
+        "https://user-authentication-api.vercel.app/products/get",
         headers
       );
       setProducts(response.data);
